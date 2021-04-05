@@ -15,7 +15,8 @@ Une fois le fichier "requirements.txt" dans le même dossier que le __ipynb__ la
 **Résultats** : 
 
 J'ai créé un dataframe des indisponibilité tout en ayant convertit les `hh:mm` en `minutes` pour simplifier et améliorer la visibilité.
-On obtient une __liste exhaustive__ de toutes les horaires possibles pour une réunion d'1 heure entre les heures de travail et où tout le monde est disponible.
+
+On obtient une __liste exhaustive__ de toutes les horaires possibles pour une réunion d'1 heure entre les heures de travail et où tout le monde est disponible. J'avais dans un premier temps utilisé que des dataframes avec des listes mais le code devenant trop, la solution actuelle utilisant les booléens permet considérablement de condenser le code tout en gardant de la visibilité sur ce qui est effectué.
 
 Le premier créneau trouvé pour les indisponibilitées rentrées est le suivant : 
 __'1 08:00-08:59'__
