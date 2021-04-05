@@ -20,10 +20,6 @@ On obtient une __liste exhaustive__ de toutes les horaires possibles pour une r�
 Le premier créneau trouvé pour les indisponibilitées rentrées est le suivant : 
 __'1 08:00-08:59'__
 
-**Limite** : 
-
-+ le problème principal est que je n'ai pas trouvé comment prendre en compte le fait qu'il puisse y avoir __une plage de disponibilité entre plusieurs plages d'indisponibilité pour un même jour__.
-
 ## Exercice 2
 
 > L'objectif est d'approximer un fonction `y=2*cos(x)+4` pour x allant de 0 à 10 à l'aide d'un réseau de neurones.
