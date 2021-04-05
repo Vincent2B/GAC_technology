@@ -17,6 +17,9 @@ Une fois le fichier "requirements.txt" dans le même dossier que le __ipynb__ la
 J'ai créé un dataframe des indisponibilité tout en ayant convertit les `hh:mm` en `minutes` pour simplifier et améliorer la visibilité.
 On obtient une __liste exhaustive__ de toutes les horaires possibles pour une réunion d'1 heure entre les heures de travail et où tout le monde est disponible.
 
+Le premier créneau trouvé pour les indisponibilitées rentrées est le suivant : 
+__'1 08:00-08:59'__
+
 **Limite** : 
 
 + le problème principal est que je n'ai pas trouvé comment prendre en compte le fait qu'il puisse y avoir __une plage de disponibilité entre plusieurs plages d'indisponibilité pour un même jour__.
