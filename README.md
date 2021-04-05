@@ -14,27 +14,29 @@ Une fois le fichier "requirements.txt" dans le même dossier que le __ipynb__ la
 
 **Résultats** : 
 
-+ J'ai créé un dataframe des indisponibilité tout en ayant convertit les `hh:mm` en `minutes` pour simplifier et améliorer la visibilité.
-+ On obtient une __liste exhaustive__ de toutes les horaires possibles pour une réunion d'1 heure entre les heures de travail et où tout le monde est disponible.
+J'ai créé un dataframe des indisponibilité tout en ayant convertit les `hh:mm` en `minutes` pour simplifier et améliorer la visibilité.
+On obtient une __liste exhaustive__ de toutes les horaires possibles pour une réunion d'1 heure entre les heures de travail et où tout le monde est disponible.
 
 **Limite** : 
 
-+ le problème principal est que je n'ai pas trouvé comment faire en sorte que mon code prenne en compte le fait qu'il puisse y avoir une plage de disponibilité entre plusieurs plages d'indisponibilité pour un même jour.
++ le problème principal est que je n'ai pas trouvé comment prendre en compte le fait qu'il puisse y avoir __une plage de disponibilité entre plusieurs plages d'indisponibilité pour un même jour__.
 
 ## Exercice 2
 
-> L'objectif est d'approximer un fonction `y=2*cos(x)+4` pour x allant de 0 à 10.
+> L'objectif est d'approximer un fonction `y=2*cos(x)+4` pour x allant de 0 à 10 à l'aide d'un réseau de neurones.
 
 **Résultats** :
 <p align="center">
   <img src="ex2_capture.png" width="1000" />
 </p>
 On peut voir la limite de mon modèle qui semble mal s'adapter aux courbures vers `input = [9,10]`. 
-J'ai utilisé numpy arange() pour créer un jeu de données équilibré et plus lisse en input. On a donc plus de points qu'avec un simple array de cette forme `np.array([i for i in range(0,10)])` néanmoins il m'a fallut alors jouer sur d'autres paramètres pour compenser cette compléxification, notamment ajouter plus de neurones (ex: augmenter le nombre de couches cachées) revient a augmenter le nombre de fonctions de base pour l'approximation ce qui augmente la précision.On peut jouer sur d'autres paramètres comme l'algorithme d'apprentissage, le choix d'activation des neurones, le nombre d'epochs, la taille des batchs (marge faible car très petit jeu de données).
+J'ai utilisé numpy arange() pour créer un jeu de données équilibré et plus lisse en input. On a donc plus de points qu'avec un simple array de cette forme `np.array([i for i in range(0,10)])` néanmoins il m'a fallut alors jouer sur d'autres paramètres pour compenser cette compléxification, notamment ajouter plus de neurones (ex: augmenter le nombre de couches cachées) revient a augmenter le nombre de fonctions de base pour l'approximation ce qui augmente la précision. On peut jouer sur d'autres paramètres comme l'algorithme d'apprentissage, le choix d'activation des neurones, le nombre d'epochs, la taille des batchs (marge faible car très petit jeu de données).
 
 *__Optimized Approximation Algorithm in Neural Networks Without Overfitting__-Yinyin Liu,Janusz A. Starzyk,Zhen Zhu*
 
-Il s'agit d'un jeu assez cours, il aurait donc pu être pas mal d'implémenter une méthode de recherche des meilleurs hyperparamètres comme `GridSearchCv` qui je crois peut s'appliquer ici.
+**Limite**:
+
++ Il s'agit d'un jeu assez cours, il aurait donc pu être pas mal d'implémenter une méthode de recherche des meilleurs hyperparamètres comme `GridSearchCv` qui je crois peut s'appliquer ici mais je n'ai pas eu le temps.
 
 __Conclusion__ :
 
